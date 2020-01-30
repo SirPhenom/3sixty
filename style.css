@@ -75,7 +75,7 @@ body {
 
 #home {
     max-width: 1200px;
-    padding: 20px;
+    padding: 30px;
     margin: auto;
     background: rgb(241, 241, 241);
     max-width: 100%;
@@ -96,7 +96,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "first-img first-img" "second-img third-img";
     text-align: center;
-    grid-gap: 30px;
+    grid-gap: 40px;
 }
 
 .home-img1, .home-img2, .home-img3 {
@@ -251,7 +251,7 @@ h1 {
 
     .form {
         margin: 10px 30px;
-        width; 250px;
+        width: 250px;
         color: blue;
         text-align: left;
         border: .1rem solid rgb(241, 241, 241);
