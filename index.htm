@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home | 3Sixty</title>
+    <!-- font awesome -->
+    <script src="/js/all.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- main css-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo"><a href="index.htm"><img src="/assets/3sIXTY LOGO.png" alt=""></a></div>
+        <div class="menu" id="menu"><i class="fas fa-bars fa-2x"></i></div>
+        <div class="menuBtns menuDisplay menuNone" id="menuDisplay">
+            <ul style="text-decoration: none;">
+                <li id="login-btn"><a href="#">Login</a></li>
+                <li id="signup-btn"><a href="#">SignUp</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="home">
+        <div id="home-left">
+            <h1>You can't really manage time, but you can take small steps that count on a long run.</h1>
+            <span style="font-size: 20px;">
+                <div><i class="fas fa-angle-double-right" style="margin-right: 20px;"></i>Track your daily activities</div>
+                <div><i class="fas fa-angle-double-right" style="margin-right: 20px;"></i>Save important notes or code snippets you're likely to reuse</div>
+                <div><i class="fas fa-angle-double-right" style="margin-right: 20px;"></i>Keep a diary of your daily activities</div>
+                <div class="home-btn"> Get Started</div>
+            </span>
+        </div>
+        <div id="home-right">
+            <div class="home-img1">
+                <div class="cont">
+                    <img src="/assets/home-img1.png" alt="" style="border-radius: 10px 10px 0 0;">
+                    <p>track your TODOS status</p>
+                </div>
+            </div>
+            <div class="home-img2">
+                <img src="/assets/home-img2.png" alt="" style="border-radius: 10px 10px 0 0;">
+                <p>track your TODOS status</p>
+            </div>
+            <div class="home-img3">
+                <img src="/assets/home-img3.png" alt="" style="border-radius: 10px 10px 0 0;">
+                <p>track your TODOS status</p>
+            </div>
+        </div>
+    </section>
+    <div id="login-form" style="text-align: center;">
+        <h2>3Sixty</h2>
+        <span id="login-close-button" style="text-align: right; position: absolute; top: 10px; right: 10px; font-weight: bold; cursor: pointer; padding: 5px;">X</span>
+
+        <div style="text-align: left;">
+            <h2 style="color: blue;">Hello <br/> Welcome Back</h2>
+            <p>Enter your personal details to login in</p>
+        </div>
+
+        <div class="google-button"> <i class="fab fa-google"></i> Sign in with Google</div>
+
+        <p>---------- OR ----------</p>
+
+        <form action="">
+            <input type="email" name="" id="" placeholder="E-mail" class="form"><br/>
+            <input type="password" placeholder="Password" class="form">
+            
+        </form>
+
+        <div class="getAccess-btn"><a href="#">Sign in</a></div>
+
+        <p>Dont have an account? <a href="">Sign up here</a></p>
+
+    </div>
+    <div id="signup-form" style="text-align: center;">
+        <div class="formDisplay">
+
+            <h2>3Sixty</h2>
+            <span id="signup-close-button" style="text-align: right; position: absolute; top: 10px; right: 10px; font-weight: bold; cursor: pointer; padding: 5px;">X</span>
+            
+            <div style="text-align: left;">
+                    <h2 style="color: blue;">Create<br/> your account</h2>
+                    <p>Enter your personal details to start your journey today</p>
+                </div>
+
+                <div class="google-button"> <i class="fab fa-google"></i> Sign up with Google</div>
+
+                <p>---------- OR ----------</p>
+            </div>
+            <form action="">
+                <input type="text" placeholder="Name" class="form"><br/>
+                <input type="text" placeholder="Username" class="form"><br/>
+                <input type="email" name="" id="" placeholder="E-mail" class="form"><br/>
+                <input type="password" placeholder="Password" class="form"><br/>
+            </form>
+        
+            <div class="getAccess-btn" ><a href="#">Sign Up</a></div>
+        
+            <p>Already have an account? <a href="">Sign in here</a></p>
+        
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
