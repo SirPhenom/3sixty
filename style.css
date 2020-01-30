@@ -141,10 +141,8 @@ h1 {
     font-size: 120%;
     padding: 10px 20px;
     cursor: pointer;
-    margin-top: 100px;
     border-radius: 30px;
     text-align: center;
-    /* width: 250px;  */
 }
 
 .home-btn,.getAccess-btn:hover{
@@ -158,35 +156,30 @@ h1 {
 }
 
 /* LOGIN AND SIGNUP SECTION */
-@keyframes formTrans {
-    0% { width: 100vh;}
-    100% { width: 60vh;}
-}
 #login-form {
     background: white;
     padding: 10px;
-    /* width: 60vh; */
+    width: 350px;
     margin: 5px auto;
     border-radius: 10px;
     box-shadow: 0px 0px 0px 5px rgb(241, 241, 241);
     text-align: center;
     position: absolute;
-    left: 2rem;
+    left: 535px;
     top: 20px;
     display: none;
-    animation: formTrans 1s;
 }
 
 #signup-form {
     background: white;
     animation: formTrans 1s;
     padding: 10px;
-    /* width: 60vh; */
+    width: 350px;
     box-shadow: 0px 0px 0px 5px rgb(241, 241, 241);
     text-align: center;
     position: absolute;
-    left: 50vh;
-    top: 10px;
+    left: 535px;
+    top: 20px;
     display: none;
     border-radius: 10px;
 }
@@ -202,10 +195,12 @@ h1 {
 }
 
 .form {
-    margin: 10px 30px;
+    margin: 5px auto;
     color: blue;
     text-align: left;
-    padding: 15px 8rem 15px 15px;
+    width: 80%;
+    height: 2rem;
+    padding: 5px;
     border: .1rem solid rgb(241, 241, 241);
     border-radius: 10px;
     cursor: pointer;
@@ -245,19 +240,21 @@ h1 {
     }
 
     #login-form,#signup-form {
-        /* width: 70%; */
-        left: 0;
+        width: 160px;
+        left:80px;
     }
 
-    .form {
+    /* .form {
         margin: 10px 30px;
-        width: 250px;
         color: blue;
         text-align: left;
+        width: 80%;
+        height: 2rem;
+        padding: 5px;
         border: .1rem solid rgb(241, 241, 241);
         border-radius: 10px;
         cursor: pointer;
-    }
+    } */
 } 
 
 /* MOBILE */
