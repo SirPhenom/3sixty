@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tracker | 3Sixty</title>
+    <!-- font awesome -->
+    <script src="/js/all.js"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- main css-->
+    <link rel="stylesheet" href="/../style.css">
+    <link rel="stylesheet" href="/css/note.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo"><a href="/../index.htm"><img src="/assets/3sIXTY LOGO.png" alt=""></a></div>
+    <div class="menu" id="menu"><i class="fas fa-bars fa-2x"></i></div>
+    <div class="menuBtns menuDisplay menuNone" id="menuDisplay">
+      <i class="fas fa-user-circle fa-3x"></i>
+    </div>
+  </nav>
+  <nav id="nav-tags">
+    <div class="nav-tags">
+      <ul style="text-decoration: none;">
+        <li><i class="fas fa-file-invoice"></i> Notes <span id="note-nav" style="border-radius: 50%; background: yellow; padding:1px 5px;">1</span></li>
+        <li><i class="fad fa-tasks-alt"></i> Todos <span style="border-radius: 50%; background: yellow; padding:1px 5px;">0</span></li>
+        <li><i class="fas fa-trophy"></i> Events <span style="border-radius: 50%; background: yellow; padding:1px 5px;">0</span></li>
+        <li><i class="fas fa-archive"></i> Archieve <span style="border-radius: 50%; background: yellow; padding:1px 5px;">0</span></li>
+        <li><i class="fas fa-cog"></i> Settings</li>
+      </ul>
+    </div>
+    <span id="create-note"><i class="fas fa-plus"></i> Create note</span>
+    <!-- </div> -->
+  </nav>
+  <section id="main">
+    <div id="note-list">
+      <div id="note-div-0" class="note-div" style="margin: 2px 0px; cursor: pointer; background: white; padding: 10px;">
+        <h2 id="h2-0">10 hours fasting every week</h2>
+        <p id="p-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, aspernatur. Illum velit aspernatur ullam eveniet asperiores ab voluptas officiis repudiandae.</p>
+        <h5 id="tag-div-0">
+          <span class="tag-span" style="background: rgb(218, 216, 216); border-radius: 30px; padding: 10px;">Personal</span>
+          <span class="tag-time"> 23 hours ago</span> 
+          <span id="tag-ellipse-0"style="background: rgb(218, 216, 216); border-radius: 30px; padding: 5px;"><i class="fas fa-ellipsis-h"></i>
+            <div id="left-note-icons-cont">
+              <div class="left-note-dropdown" id="note-edit"><i class="fas fa-pen" style="padding-right: 30px;"></i> Edit</div>
+              <div class="left-note-dropdown" id="note-delete"><i class="fas fa-trash" style="padding-right: 30px;"></i> Delete</div>
+              <div class="left-note-dropdown"><i class="fa fa-print" aria-hidden="true" style="padding-right: 30px;"></i> Print</div>
+              <div class="left-note-dropdown"><i class="fa fa-archive" aria-hidden="true" style="padding-right: 30px;"></i> Archieve</div>
+            </div>
+          </span> 
+        </h5>
+      </div>
+    </div>
+    <div id="current-note">
+        <div class="current-text-area">
+          <h2 class="note-preview"></h2>
+          <p class="note-preview"></p>
+        </div>
+        <div class="current-text-toggle">
+          <div id="current-note-icons"><i class="fas fa-ellipsis-h"></i>
+            <div id="current-note-icons-cont">
+              <div class="right-todo-dropdown" id="edit"><i class="fas fa-pen" style="padding-right: 30px;"></i> Edit</div>
+              <div class="right-todo-dropdown" id="delete"><i class="fas fa-trash" style="padding-right: 30px;"></i> Delete</div>
+              <div class="right-todo-dropdown"><i class="fa fa-print" aria-hidden="true" style="padding-right: 30px;"></i> Print</div>
+              <div class="right-todo-dropdown"><i class="fa fa-archive" aria-hidden="true" style="padding-right: 30px;"></i> Archieve</div>
+            </div>
+          </div> 
+
+          <div id="current-note-icons2" style="border-radius: 30px;">
+            <i class="fas fa-plus" style="cursor: pointer; padding: 5px 0;"></i>
+            <hr>
+            <i class="fas fa-minus" style="cursor: pointer; padding: 5px 0;"></i>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="modal-bg">
+    <div id="note-form">
+        <span id="form-close-button" style="text-align: right; position: absolute; top: 10px; right: 10px; font-weight: bold; cursor: pointer; padding: 5px;"><i class="fas fa-window-close" aria-hidden="true"></i></span>
+      <h2 style="font-weight: bold;">Write a note<hr/></h2>
+      <form action="">
+        <label>Title<br/>
+          <input type="text" class="title form-field noteCreatorForm" placeholder="Note title">
+        </label><br/>
+        <label>Tag<br/>
+          <input type="text" class="tag form-field noteCreatorForm" placeholder="Note tag">
+        </label><br/>
+        <label>Note<br/>
+          <textarea rows="7" placeholder="Note here" class="form-note noteCreatorForm"></textarea>
+        </label><br/>
+      </form>
+      <div id="create-form-btn">Create form</div>
+    </div>
+    <div id="edit-form">
+        <span id="edit-form-close-button" style="text-align: right; position: absolute; top: 10px; right: 10px; font-weight: bold; cursor: pointer; padding: 5px;"><i class="fas fa-window-close" aria-hidden="true"></i></span>
+      <h2 style="font-weight: bold;">Edit note</h2>
+      <form action="">
+        <label>Title<br/>
+          <input type="text" class="edit-field form-field" placeholder="Note title">
+        </label><br/>
+        <label>Tag<br/>
+          <input type="text" class="edit-field form-field" placeholder="Note tag">
+        </label><br/>
+        <label>Note<br/>
+          <textarea rows="7"  placeholder="Note here" class="edit-field form-note"></textarea>
+        </label><br/>
+      </form>
+      <div style="margin-top: 10px;" >
+        <span id="edit-form-btn">Edit</span>
+        <span id="cancel-edit-form-btn">Cancel</span>
+      </div>
+    </div>
+    <div id="delete-modal">
+      <div style="border-radius: 10px; text-align: center; background-color: aqua; padding: 20px; width: 400px;">
+        <h3>Are you sure you want to delete</h3>
+        <div>
+          <button style="border-radius: 50px; margin: 10px; padding: 10px 40px; background: red;">Yes</button>
+          <button style="border-radius: 50px; margin: 10px; padding: 10px 40px; border-color: blue;">No</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="/js/jquery-3.4.1.min.js"></script>
+  <script src="/css/note.js"></script>
+  <!-- <script src="/css/oldjs.js"></script> -->
+</body>
+</html>

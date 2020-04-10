@@ -10,15 +10,14 @@ homeBtn = document.getElementsByClassName('home-btn')[0];
   var menus = document.getElementById('menuDisplay');
   var menuButton = document.getElementById('menu')
   menuButton.addEventListener('click', function() {
-      if (menus.classList.contains("menuNone")) {
-          menus.classList.remove("menuNone");
-          // menus.style.display = "block";
-          menus.classList.add("menuShow");
-          menus.classList.add("fadeInDown");
-      } else {
-          menus.classList.add("menuNone");
-          menus.classList.remove("menuShow")
-      }
+    if (menus.classList.contains("menuNone")) {
+      menus.classList.remove("menuNone");
+      menus.classList.add("menuShow");
+      menus.classList.add("fadeInDown");
+    } else {
+      menus.classList.add("menuNone");
+      menus.classList.remove("menuShow")
+    }
   })
 })();
 
