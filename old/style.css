@@ -1,0 +1,126 @@
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    position: relative;
+    margin: 0;
+    background: white;
+}
+a {
+    cursor: pointer;
+}
+.menuBtns ul li {
+    display: inline;
+    list-style-type: none;
+    text-transform: capitalize;
+    margin: 0px;
+    padding: 10px;
+    cursor: pointer;
+    /* background: blue; */
+}
+
+.menuBtns ul li:hover{
+    background: rgb(122, 122, 250);
+}
+
+.logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+#menu-btn {
+    background: rgb(70, 70, 250);
+    color: white;
+    /* font-size: 120%; */
+    padding: 15px 0px;
+    border-radius: 30px;
+    cursor: pointer;    
+    /* margin: auto; */
+    width: 140px;
+    text-align: center;
+
+}
+
+#login-btn {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#signup-btn {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    cursor: pointer;
+}
+
+/* #login-btn:hover,#signup-btn:hover{
+    background: white;
+} */
+
+.menu {
+    display: none;
+}
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 950px) {
+    /* NAV */
+    .nav {
+        margin-top: 0;
+    }
+
+    .menuBtns {
+        grid-column: 1/5;
+        text-align: center;
+    }
+
+    .logo {
+        grid-column: 1/5;
+        text-align: center;
+    }
+} 
+
+/* MOBILE */
+
+@media screen and (max-width: 490px) {
+    /* NAV */
+    
+    .logo {
+        grid-column: 1/3;
+    }
+
+    .menuBtns {
+        grid-column: 1/5;
+        text-align: center;
+    }
+
+    .menuBtns ul {
+        padding: 0;
+        margin: 0;
+    }
+    .menuBtns ul li {
+        display: block;
+        list-style-type: none;
+        margin: 10px;
+    }
+    .menu {
+        display: inline-block;
+        justify-self: end;
+        grid-column: 4/5;
+        border: 2px solid white;
+        padding: 10px;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+    .menu:hover {
+        cursor: pointer;
+    }
+    .menuShow {
+        display: block;
+    }
+    .menuNone {
+        display: none;
+    }
+
+}

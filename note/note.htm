@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Note | 3Sixty</title>
+        <!-- Bootstrap Link -->
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <!-- font awesome -->
+        <script src="../js/all.js"></script>
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"> 
+        <!-- main css-->
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./note.css">
+    </head>
+    <body class="bg-light">
+        <!-- nav section -->
+        <nav class="navbar navbar-light bg-white navbar-expand-sm py-2">
+            <!-- logo -->
+            <a href="index.html" class="navbar-brand text-uppercase pr-5">3Sixty</a>
+            <!-- user profile -->
+            <i class="fas fa-user-circle fa-3x ml-auto mr-3">user</i>
+            <!-- navbar toggler -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarLinks">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </nav>
+        <!-- end of navbar -->
+        <!-- nav section -->
+        <nav class="navbar navbar-light navbar-expand-sm shadow-sm py-0">
+            <!-- nav links -->
+            <div class="collapse navbar-collapse" id="navbarLinks">
+                <ul class="navbar-nav">
+                    <li class="nav-item pointer border-bottom border-primary py-3 border-3 text-primary active"><i class="fas fa-file-invoice mr-1"></i>Notes<span class="ml-1 border px-2 py-1 rounded-circle bg-grey">0</span></li>
+                    <li class="nav-item pointer border-bottom border-primary py-3 border-3 text-primary"><i class="fas fa-tasks mr-1"></i>Todos<span class="ml-1 border px-2 py-1 rounded-circle bg-grey">0</span></li>
+                    <li class="nav-item pointer border-bottom border-primary py-3 border-3 text-primary"><i class="fas fa-trophy mr-1"></i>Events<span class="ml-1 border px-2 py-1 rounded-circle bg-grey">0</span></li>
+                    <li class="nav-item pointer border-bottom border-primary py-3 border-3 text-primary"><i class="fas fa-archive mr-1"></i>Archives<span class="ml-1 border px-2 py-1 rounded-circle bg-grey">0</span></li>
+                    <li class="nav-item pointer border-bottom border-primary py-3 border-3 text-primary"><i class="fas fa-cog mr-1"></i>Settings</li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 nav-item" data-toggle="modal" data-target="#createNote"><i class="fas fa-plus mr-3"></i>Create Note</button>
+                    <button type="button" class="btn btn-primary rounded-pill py-2 px-4 nav-item" data-toggle="modal" data-target="#editNote"><i class="fas fa-plus mr-3"></i>Create Note</button>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of navbar -->
+        <section>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-3 p-0">
+                        <div class=" bg-white p-4 my-1">
+                            <h5 class="font-weight-bold">10 Hours fasting every week</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid repellat provident molestiae, nobis praesentium ratione libero corrupti veritatis illum voluptatibus, mollitia pariatur voluptates, eaque quam labore dolore. Omnis, doloremque?</p>
+                            <div><span class="border rounded-pill bg-grey p-2 text-primary mr-1">Personal</span>23 hours ago <span class="border rounded-pill bg-grey p-2 text-primary ml-1"><i class="fas fa-ellipsis-h"></i></span></div>
+                        </div>
+                        <div class=" bg-white p-4 my-1">
+                            <h5 class="font-weight-bold">Eid Mubarak</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aliquid repellat provident molestiae, nobis praesentium ratione libero corrupti veritatis illum voluptatibus, mollitia pariatur voluptates, eaque quam labore dolore. Omnis, doloremque?</p>
+                            <div><span class="border rounded-pill bg-grey p-2 text-primary mr-1">Personal</span>23 hours ago <span class="border rounded-pill bg-grey p-2 text-primary ml-1"><i class="fas fa-ellipsis-h"></i></span></div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 d-flex py-3">
+                        <div class="col-md-10 m-2 p-5 bg-white height-80">
+                            <h1>10 hours of fasting</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae praesentium at debitis dolorum omnis minus architecto culpa! Rerum omnis, qui incidunt aperiam fugiat facilis totam velit? Veritatis quia id dicta.</p>
+                        </div>
+                        <!-- <div class="col-md-2 p-5 dropleft">
+                            <span class="border rounded-circle bg-grey p-2 text-primary ml-1 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-ellipsis-h"></i></span>
+                        </div> -->
+                        
+                        <!-- <div class="dropdown mb-auto">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown button
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </div>    -->
+                        <div class=" col-md-2 p-5 btn-group dropleft">
+                            <button type="button" class="btn dropdown-toggle border rounded-circle bg-grey p-2 text-primary mb-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <!-- <i class="fas fa-ellipsis-h"></i> -->
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" id="edit"><i class="fas fa-pen"></i> Edit</a>
+                                <a class="dropdown-item" id="delete"><i class="fas fa-trash" style="padding-right: 30px;"></i> Delete</a>
+                                <a class="dropdown-item"><i class="fa fa-print" aria-hidden="true"></i> Print</a>
+                                <a class="dropdown-item"><i class="fa fa-archive" aria-hidden="true" ></i> Archieve</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="modals">
+            <!-- create note modal -->
+            <div class="modal fade" id="createNote">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content p-3">
+                        <div class="modal-header">
+                            <h3 class="modal-title text-center">Write a Note</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!-- createNote body -->
+                        <div class="modal-body">
+                            <form action="" class="my-1">
+                                <div class="form-group mt-3">
+                                    <label for="title">Title</label>
+                                    <input type="text" name="title" id="title" class="form-control" placeholder="note title">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="title">Tag</label>
+                                    <input type="text" name="tag" id="tag" class="form-control" placeholder="note tag">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="title">Note</label>
+                                    <textarea name="note" id="note" cols="30" rows="7" placeholder="note here" class="form-control"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block text-white rounded-pill">Create</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of createNote modal -->
+            <!-- edit note modal -->
+            <div class="modal fade" id="editNote">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content p-3">
+                        <div class="modal-header">
+                            <h3 class="modal-title text-center">Edit Note</h3>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!-- createNote body -->
+                        <div class="modal-body">
+                            <form action="" class="my-1">
+                                <div class="form-group mt-3">
+                                    <label for="title">Title</label>
+                                    <input type="text" name="title" id="title" class="form-control" placeholder="note title">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="title">Tag</label>
+                                    <input type="text" name="tag" id="tag" class="form-control" placeholder="note tag">
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label for="title">Note</label>
+                                    <textarea name="note" id="note" cols="30" rows="7" placeholder="note here" class="form-control"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary px-4 text-white rounded-pill">Edit</button>
+                                <button type="submit" class="btn btn-outline-primary px-4 text-danger rounded-pill">Cancel</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of editNote modal -->
+            <!-- edit note modal -->
+            <div class="modal fade" id="editNote">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content p-3">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <!-- createNote body -->
+                        <div class="modal-body text-center">
+                            <i class="fas fa-exclamation-triangle fa-5x text-danger"></i>
+                            <h4 class="text-center">Are you sure you want to delete this note?</h4>
+                            <button type="submit" class="btn btn-outline-secondary text-dark px-4 text-white rounded-pill">Cancel</button>
+                            <button type="submit" class="btn btn-outline-danger bg-light-red text-danger px-4 rounded-pill">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of editNote modal -->
+        </section>
+         <!-- jQuery -->
+        <script type="text/javascript" src="../js/jquery-3.4.1.min.js"></script>
+        <!-- Bootstrap js -->
+        <script type="text/javascript" src="../js/bootstrap.min.js"></script>
+        <script src="../script.js"></script>
+    </body> 
+</html>

@@ -1,0 +1,19 @@
+.bg-grey{
+    background-color: rgb(197, 196, 196);
+}
+.bg-light-red{
+    background-color: rgb(255, 181, 181);
+}
+.border-grey{
+    background-color: rgb(197, 196, 196);
+}
+.border-3{
+    border-width: 3px !important;
+}
+.pointer {
+    cursor: pointer;
+}
+.nav-item{
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}

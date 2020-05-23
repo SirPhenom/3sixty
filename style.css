@@ -1,0 +1,13 @@
+body {
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    position: relative;
+    margin: 0;
+    background: white;
+}
+a {
+    cursor: pointer;
+}
+.height-80{
+    min-height: 80vh;
+}
